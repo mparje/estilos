@@ -30,7 +30,7 @@ def cambiar_estilo_texto(texto, estilo):
     return respuesta.choices[0].text.strip()
 
 # Configuración de la aplicación de Streamlit
-st.title('Cambio de Estilo de Textos con GPT-3')
+st.title('Cambio de Estilo de Textos')
 
 texto = st.text_area('Ingresa tu texto', height=200)
 estilo = st.selectbox('Selecciona un estilo', list(categorias.keys()))
